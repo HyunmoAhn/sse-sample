@@ -1,12 +1,14 @@
 import React from 'react'
 import { getUser } from './api/bridgeApi'
+import { init } from './core/sse'
 
 export const Time = () => {
   const onClickButton = async () => {
     console.log(`click button`)
-    const data = await getUser()
+    // const data = await getUser()
 
-    console.log(data)
+    init()
+    // console.log(data)
   }
   return (
     <div>
